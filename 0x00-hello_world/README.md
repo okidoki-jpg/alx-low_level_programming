@@ -14,3 +14,11 @@
 3-name:
     compile $CFILE into an executable
     named cisfun
+
+4-puts.c:
+    write a C program that prints out
+    "Programming is like building a
+    multilingual puzzle" and and exit
+    with 0
+
+
