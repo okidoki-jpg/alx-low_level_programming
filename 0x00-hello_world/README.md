@@ -30,4 +30,8 @@
     size of various data types on
     the standard output
 
-
+100-intel:
+    write a script that generates the
+    assembly code (Intel syntax) of
+    $CFILE and save it in an output 
+    file with a .s extension
