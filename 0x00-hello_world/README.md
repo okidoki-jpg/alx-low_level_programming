@@ -16,9 +16,12 @@
     named cisfun
 
 4-puts.c:
-    write a C program that prints out
-    "Programming is like building a
-    multilingual puzzle" and and exit
-    with 0
+    write a C program that uses puts to
+    print a string to the standard
+    output
 
+5-printf.c:
+    write a C program that uses printf
+    to print a string to the standard 
+    output
 
