@@ -25,3 +25,9 @@
     to print a string to the standard 
     output
 
+6-size.c:
+    write a C program that prints the
+    size of various data types on
+    the standard output
+
+
