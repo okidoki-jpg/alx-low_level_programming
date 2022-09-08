@@ -11,4 +11,6 @@
     filename as the .c file and a .s
     file extension
 
-
+3-name:
+    compile $CFILE into an executable
+    named cisfun
