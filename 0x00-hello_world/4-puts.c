@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * The 'main' function is the entry
- * point with a return value of 0
- * to indicate success.
+ * Description: main - The program 
+ * entry point.
+ * Return: 0 to indicate success.
  */
 
 int main(void)
