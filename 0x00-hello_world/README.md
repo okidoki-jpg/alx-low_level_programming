@@ -35,3 +35,8 @@
     assembly code (Intel syntax) of
     $CFILE and save it in an output 
     file with a .s extension
+
+101-quote.c:
+    write a C program that prints a 
+    string without the use of printf
+    or puts
