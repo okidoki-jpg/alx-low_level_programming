@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * The 'main' function is the entry
  * point with a return value of 0
  * to indicate success.
