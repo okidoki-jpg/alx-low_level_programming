@@ -19,3 +19,7 @@
     print the lowercase alphabet
     excluding 'q' and 'e' using putchar
     only
+
+5-print_numbers.c:
+    print the numbers 0 to 9 using
+    putchar only
