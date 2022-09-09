@@ -23,3 +23,8 @@
 5-print_numbers.c:
     print the numbers 0 to 9 using
     putchar only
+
+6-print_numberz.c:
+    using putchar only, print the 
+    numbers 0 to 9 without using char 
+    values
