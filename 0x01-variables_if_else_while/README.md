@@ -28,3 +28,7 @@
     using putchar only, print the 
     numbers 0 to 9 without using char 
     values
+
+7-print_tebahpla.c:
+    print the lowercase alphabet 
+    backwards using putchar only
