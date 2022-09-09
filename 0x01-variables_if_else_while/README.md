@@ -36,3 +36,8 @@
 8-print_base16.c:
     print all numberw of base 16 in 
     lowercase using putchar only
+
+9-print_comb.c:
+    print all possible combinations of
+    single digit numbers seperated by
+    comma space
