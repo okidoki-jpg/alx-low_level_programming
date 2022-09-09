@@ -52,4 +52,7 @@
     tripple digit numbers with none
     repeating seperated by comma space
 
-
+102-print_comb5.c:
+    print all possible combinations of
+    two two-digit numbers with none
+    repeating seperated by comma space
