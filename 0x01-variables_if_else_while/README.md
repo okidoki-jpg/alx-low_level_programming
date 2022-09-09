@@ -46,3 +46,10 @@
     print all possible combinations of
     double digit numbers with none
     repeating seperated by comma space
+
+101-print_comb4.c:
+    print all possible combinations of 
+    tripple digit numbers with none
+    repeating seperated by comma space
+
+
