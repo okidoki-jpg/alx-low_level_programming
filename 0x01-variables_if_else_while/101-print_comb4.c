@@ -27,10 +27,12 @@ int main(void)
 					putchar(' ');
 				}
 			}
-			hundr++;
-			tenth = hundr + 1;
+			tenth++;
 			unit = tenth + 1;
 		}
+		hundr++;
+		tenth = hundr + 1;
+		unit = tenth + 1;
 	}
 	putchar(10);
 	return (0);
