@@ -14,3 +14,8 @@
 3-print_alphabets.c:
     print the lowercase then uppercase
     alphabet using putchar only
+
+4-print_alphabt.c:
+    print the lowercase alphabet
+    excluding 'q' and 'e' using putchar
+    only
