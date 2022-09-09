@@ -41,3 +41,8 @@
     print all possible combinations of
     single digit numbers seperated by
     comma space
+
+100-print_comb3.c:
+    print all possible combinations of
+    double digit numbers with none
+    repeating seperated by comma space
