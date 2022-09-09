@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int count = 123;
+	int count = 122;
 
 	while (count > 96)
 	{
