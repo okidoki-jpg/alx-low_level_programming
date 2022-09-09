@@ -11,4 +11,6 @@
     print the lowercase alphabet using
     putchar only
 
-
+3-print_alphabets.c:
+    print the lowercase then uppercase
+    alphabet using putchar only
