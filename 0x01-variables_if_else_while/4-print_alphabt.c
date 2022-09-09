@@ -14,6 +14,7 @@ int main(void)
 	{
 		if (count == 113 || count == 101)
 		{
+			count++;
 			continue;
 		}
 		putchar(count++);
