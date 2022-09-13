@@ -31,3 +31,8 @@
 
 9-times_table.c:
 	print nine times table
+
+10-add.c:
+	return the sum of two values
+
+
