@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int idx = -1, prev = 1 curr = 2, next;
+	int next, idx = -1, prev = 1 curr = 2;
 
 	printf("1, 2, ");
 	while (idx++ < 50)
@@ -21,5 +21,5 @@ int main(void)
 			printf(", ");
 	}
 	printf("\n");
-	return (0);	
+	return (0);
 }

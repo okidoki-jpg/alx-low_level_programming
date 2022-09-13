@@ -16,5 +16,5 @@ int main(void)
 			tot += idx;
 	}
 	printf("%d\n", tot);
-	return (0);	
+	return (0);
 }
