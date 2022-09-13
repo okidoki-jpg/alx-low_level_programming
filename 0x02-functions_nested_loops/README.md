@@ -20,4 +20,7 @@
 5-sign.c:
 	print the symbol of a number
 
+6-abs.c:
+    return absolute value of number
+
 
