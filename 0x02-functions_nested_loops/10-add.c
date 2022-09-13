@@ -3,6 +3,8 @@
 /**
  * add - adds two numbers together
  *
+ * @a: function parameter
+ * @b: function parameter
  * Return: sum of two numbers
  */
 
