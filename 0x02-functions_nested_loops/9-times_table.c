@@ -32,7 +32,7 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-			} else if ((tot + incr) > 9 && incr < 9)
+			} else if (incr < 9)
 			{
 				_putchar(',');
 				_putchar(' ');
