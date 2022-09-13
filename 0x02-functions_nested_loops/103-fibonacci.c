@@ -19,7 +19,7 @@ int main(void)
 		next = prev + curr;
 		prev = curr;
 		curr = next;
-		if (next % 2 == 0)
+		if ((next % 2) == 0)
 			if ((tot + next) < 4000000)
 				tot += next;
 			else
