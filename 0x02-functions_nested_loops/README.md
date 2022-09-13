@@ -26,4 +26,7 @@
 7-print_last_digit.c:
 	return last digit of a number
 
+8-24_hours.c:
+	print all minutes of the day
+
 
