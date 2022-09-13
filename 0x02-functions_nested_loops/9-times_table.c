@@ -23,7 +23,7 @@ void times_table(void)
 			{
 				_putchar((tot / 10) + '0');
 				_putchar((tot % 10) + '0');
-			} else if (tot < 9)
+			} else if (tot < 10)
 			{
 				_putchar((tot % 10) + '0');
 			}
@@ -31,7 +31,7 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
-			} else if (tot < 9 && incr < 9)
+			} else if (tot < 10 && incr < 9)
 			{
 				_putchar(',');
 				_putchar(' ');
