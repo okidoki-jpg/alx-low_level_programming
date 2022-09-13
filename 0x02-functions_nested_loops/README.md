@@ -17,4 +17,7 @@
 4-isalpha.c:
 	determine if letter is uppercase
 
+5-sign.c:
+	print the symbol of a number
+
 
