@@ -9,9 +9,10 @@
 int main(void)
 {
 	unsigned long  next,  idx, prev, curr;
+
 	idx =  0;
 	prev = 0;
-	next = 1; 
+	next = 1;
 
 	while (idx < 50)
 	{
@@ -20,7 +21,7 @@ int main(void)
 		prev = curr;
 		curr = next;
 		printf("%lu", next);
-		if (idx < 49)
+		if (idx < 50)
 			printf(", ");
 		idx++;
 	}
