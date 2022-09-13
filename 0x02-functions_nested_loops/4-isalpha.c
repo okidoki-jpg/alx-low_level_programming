@@ -9,7 +9,7 @@
 
 int _isalpha(int c)
 {
-	if (((122 - c) > 26 )|| ((90 - c) > 26))
+	if ('a' >= c <= 'z'|| 'A' >= c <= 'Z')
 	{
 		return (0);
 	}
