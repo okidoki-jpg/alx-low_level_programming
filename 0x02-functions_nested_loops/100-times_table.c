@@ -11,9 +11,7 @@ void print_times_table(int n)
 {
 	int tot, incr, num = 0;
 
-	if (n > 15 || n < 0)
-		return;
-	while (num++ < n)
+	while (num++ < n && n < 15 && n > 0)
 	{
 		incr = -1;
 		while (incr++ < n)
@@ -44,8 +42,10 @@ void print_times_table(int n)
 				_putchar(' ');
 				_putchar(' ');
 			} else if (incr < n)
+			{
 				_putchar(',');
 				_putchar(' ');
+			}
 		}
 		_putchar(10);
 	}
