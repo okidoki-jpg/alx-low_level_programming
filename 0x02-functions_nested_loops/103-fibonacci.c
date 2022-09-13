@@ -20,7 +20,7 @@ int main(void)
 		prev = curr;
 		curr = next;
 		if ((next % 2) == 0)
-			tot += next
+			tot += next;
 	}
 	printf("%lu\n", tot);
 	return (0);
