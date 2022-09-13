@@ -38,4 +38,6 @@
 11-print_to_98.c:
 	print increments to 98
 
-
+100-times_table.c:
+	print n times tables less than 15
+	and greater than 0
