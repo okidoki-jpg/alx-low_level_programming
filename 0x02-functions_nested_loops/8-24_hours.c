@@ -33,8 +33,8 @@ void jack_bauer(void)
 					_putchar(10);
 				}
 			}
+		if (hr_t == 2 && hr_u == 3 && min_t == 5 && min_t == 9)
+			break;
 		}
-	if (hr_t == 2 && hr_u == 3 && min_t == 5 && min_t == 9)
-		break;
 	}
 }
