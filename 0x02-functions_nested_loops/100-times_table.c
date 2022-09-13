@@ -1,19 +1,15 @@
 #include "main.h"
-
 /**
  * print_times_table - prints the n
  * times table greater than 0, less
  * than 15
- *
  * @n: function parameter
  * Return: void
  */
 
 void print_times_table(int n)
 {
-	int num = -1;
-	int tot;
-	int incr;
+	int tot, incr, num = 0;
 
 	if (n > 15 || n < 0)
 		return;
@@ -25,7 +21,6 @@ void print_times_table(int n)
 			tot = num * incr;
 			if (tot > 99)
 			{
-				
 				_putchar((tot / 100) + '0');
 				_putchar((tot / 10) % 10 + '0');
 				_putchar((tot % 10) + '0');
@@ -49,10 +44,8 @@ void print_times_table(int n)
 				_putchar(' ');
 				_putchar(' ');
 			} else if (incr < n)
-			{
 				_putchar(',');
 				_putchar(' ');
-			}
 		}
 		_putchar(10);
 	}
