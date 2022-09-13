@@ -8,40 +8,41 @@
  */
 
 void print_times_table(int n)
-{
-	int tot, incr, num = -1;
+}
+	int i, j, res;
 
-	if (n > 15 && n < 0)
+	if (n < 0 || n > 15)
 		return;
-	while (num++ < n)
+	for (i = 0; i <= n; i++)
 	{
-		incr = -1;
-		while (incr++ < n)
+		for (j = 0; j <= n; j++)
 		{
-			tot = num * incr;
-			if (incr != 0)
+			res = (i * j);
+			if (j != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
 			}
-			if (tot < 10 && num != 0)
+			if (res < 10 && j != 0)
 			{
 				_putchar(' ');
 				_putchar(' ');
-				_putchar((tot % 10) + '0');
-			} else if (tot >= 10 && tot < 100)
+				_putchar((res % 10) + '0');
+			}
+			else if (res >= 10 && res < 100)
 			{
 				_putchar(' ');
-				_putchar((tot / 10) + '0');
-				_putchar((tot % 10) + '0');
-			} else if (tot >= 100 && incr != 0)
+				_putchar((res / 10) + '0');
+				_putchar((res % 10) + '0');
+			}
+			else if (res >= 100 && j != 0)
 			{
-				_putchar((tot / 100) + '0');
-				_putchar((tot / 10) % 10 + '0');
-				_putchar((tot % 10) + '0');
-			} else
-				_putchar((tot % 10) + '0');
+				_putchar((res / 100) + '0');
+				_putchar((res / 10) % 10 + '0');
+				_putchar((res % 10) + '0');
+			}else
+				_putchar((res % 10) + '0');
 		}
-		_putchar(10);
+		_putchar('\n');
 	}
 }
