@@ -3,15 +3,15 @@
 /**
  * _islower - determines lowercase
  * alphabet
- *
+ * @c: function parameter
  * Return: 1 if found, else 0.
  */
 
 int _islower(int c)
 {
-	if (c >= 'a' && c <= 'z')
+	if ((122 - c) > 26)
 	{
-		return (1);
+		return (0);
 	}
-	return (0);
+	return (1);
 }
