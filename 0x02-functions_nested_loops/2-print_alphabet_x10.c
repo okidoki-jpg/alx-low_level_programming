@@ -1,20 +1,6 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-
-void print_alphabet_x10(void);
-
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
-
-/**
  * print_alphabet_x10 - print the
  * alphabet followef by a new line
  * ten times
@@ -31,8 +17,9 @@ void print_alphabet_x10(void)
 	{
 		while (idx < 123)
 		{
-			_putchar(idx);
+			_putchar(idx++);
 		}
 		_putchar(10);
+		count++;
 	}
 }
