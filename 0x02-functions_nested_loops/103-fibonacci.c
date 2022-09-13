@@ -20,16 +20,7 @@ int main(void)
 		prev = curr;
 		curr = next;
 		if ((next % 2) == 0)
-		{
-			if ((tot + next) < 4000000)
-			{
-				tot += next;
-			}
-			else
-			{
-				break;
-			}
-		}
+			tot += next
 	}
 	printf("%lu\n", tot);
 	return (0);
