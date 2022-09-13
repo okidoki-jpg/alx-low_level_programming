@@ -17,6 +17,5 @@ void print_to_98(int n)
 			printf("%d", n--);
 		printf(", ");
 	}
-	puts(98);
-	putchar(10);
+	puts("98");
 }
