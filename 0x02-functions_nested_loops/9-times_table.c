@@ -14,7 +14,7 @@ void times_table(void)
 	int incr;
 	while (num++ < 9)
 	{
-		incr = -1
+		incr = -1;
 		while (incr++ < 9)
 		{
 			tot = num * incr;

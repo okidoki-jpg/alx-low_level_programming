@@ -29,4 +29,5 @@
 8-24_hours.c:
 	print all minutes of the day
 
-
+9-times_table.c:
+	print nine times table
