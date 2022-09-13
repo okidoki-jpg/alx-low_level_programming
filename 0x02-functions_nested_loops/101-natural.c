@@ -9,6 +9,7 @@
 int main(void)
 {
 	int idx = -1, tot;
+
 	while (idx++ < 1024)
 	{
 		if (idx % 3 == 0 || idx % 5 == 0)
