@@ -8,7 +8,8 @@
 
 int main(void)
 {
-	int next, idx = -1, prev = 1 curr = 2;
+	int next;
+	int idx = -1, prev = 1 curr = 2;
 
 	printf("1, 2, ");
 	while (idx++ < 50)
