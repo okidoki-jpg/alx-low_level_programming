@@ -23,4 +23,7 @@
 6-abs.c:
     return absolute value of number
 
+7-print_last_digit.c:
+	return last digit of a number
+
 
