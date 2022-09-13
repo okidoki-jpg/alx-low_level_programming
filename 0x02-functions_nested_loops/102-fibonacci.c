@@ -8,17 +8,21 @@
 
 int main(void)
 {
-	unsigned long next, idx = -1, prev = 1, curr = 2;
+	unsigned long  next,  idx, prev, curr;
+	idx =  0;
+	prev = 0;
+	next = 1; 
 
-	printf("1, 2, ");
-	while (idx++ < 50)
+	while (idx < 50)
 	{
 		next = prev + curr;
+		idx++;
 		prev = curr;
 		curr = next;
 		printf("%lu", next);
-		if (idx < 50)
+		if (idx < 49)
 			printf(", ");
+		idx++;
 	}
 	printf("\n");
 	return (0);
