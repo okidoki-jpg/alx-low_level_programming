@@ -11,7 +11,7 @@ void print_times_table(int n)
 {
 	int tot, incr, num = 0;
 
-	while (num++ < n && n < 15 && n > 0)
+	while (num++ < n && n < 15 && n > -1)
 	{
 		incr = -1;
 		while (incr++ < n)
