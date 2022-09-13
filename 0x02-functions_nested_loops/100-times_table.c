@@ -23,7 +23,13 @@ void print_times_table(int n)
 		while (incr++ < n)
 		{
 			tot = num * incr;
-			if (tot > 9)
+			if (tot > 99)
+			{
+				
+				_putchar((tot / 100) + '0');
+				_putchar((tot / 10) + '0');
+				_putchar((tot % 10) + '0');
+			} else if (tot > 9)
 			{
 				_putchar((tot / 10) + '0');
 				_putchar((tot % 10) + '0');
