@@ -43,10 +43,14 @@ void print_times_table(int n)
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(' ');
-			} else if (incr < n)
+			} else if ((tot + num) < 100 && incr < n)
 			{
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+			} else if (incr < n)
+			{
+				_putchar(',');
 				_putchar(' ');
 			}
 		}
