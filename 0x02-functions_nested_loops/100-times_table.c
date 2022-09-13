@@ -31,7 +31,7 @@ void print_times_table(int n)
 			{
 				_putchar((tot % 10) + '0');
 			}
-			if ((tot + num) < 10 && incr < 9 && (num * n) != tot)
+			if ((tot + num) < 10 && incr < 9 && (num * (n % num)) != tot)
 			{
 				_putchar(',');
 				_putchar(' ');
