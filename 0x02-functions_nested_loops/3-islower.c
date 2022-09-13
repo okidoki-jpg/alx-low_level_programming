@@ -9,7 +9,7 @@
 
 int _islower(int c)
 {
-	if ((122 - c) > 26)
+	if (122 - c > 26)
 	{
 		return (0);
 	}
