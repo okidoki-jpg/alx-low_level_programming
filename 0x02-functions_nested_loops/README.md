@@ -6,4 +6,9 @@
 	print the lowercase alphabet.
     prototype: void print_alphabet(void);
 
+2-print_alphabet_x10.c:
+    print the lowercase alphabet
+	followed by a new line ten times.
+	prototype: void print_alphabet_x10(void);
+
 

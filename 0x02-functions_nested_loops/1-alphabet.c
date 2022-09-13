@@ -14,6 +14,13 @@ int main(void)
 	return (0);
 }
 
+
+/**
+ * print_alphabet - prints the alphabet
+ *
+ * Return: void
+ */
+
 void print_alphabet(void)
 {
 	int idx = 97;
@@ -23,5 +30,4 @@ void print_alphabet(void)
 		_putchar(idx);
 	}
 	_putchar(10);
-	return;
 }
