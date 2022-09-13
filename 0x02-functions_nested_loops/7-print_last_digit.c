@@ -9,11 +9,14 @@
 
 int print_last_digit(int n)
 {
+	int retVal;
 	if (n < 0)
 	{
-		_putchar((n * -1) % 10);
-		return ((n * -1) % 1);
+		retVal = (n * -1) % 10;
+		_putchar(retVal);
+		return (retVal);
 	}
-	_putchar(n % 10);
-	return (n % 10);
+	retVal = n % 10;
+	_putchar(retVal);
+	return (retVal);
 }
