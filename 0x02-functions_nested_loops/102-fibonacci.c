@@ -12,12 +12,11 @@ int main(void)
 
 	idx =  0;
 	prev = 0;
-	next = 1;
+	curr = 1;
 
-	while (idx < 50)
+	while (idx++ < 50)
 	{
 		next = prev + curr;
-		idx++;
 		prev = curr;
 		curr = next;
 		printf("%lu", next);
