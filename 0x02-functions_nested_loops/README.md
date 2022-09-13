@@ -41,3 +41,12 @@
 100-times_table.c:
 	print n times tables less than 15
 	and greater than 0
+
+101-natural.c:
+    print sum of numbers under 1024
+    that are divisible by 3 and 5
+
+102-fibonacci.c:
+	print first 50 fibonacci
+
+
