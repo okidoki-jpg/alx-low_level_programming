@@ -19,15 +19,20 @@ void times_table(void)
 		while (incr++ < 9)
 		{
 			tot = num * incr;
-			if (tot > 9 && incr < 9)
+			if (tot > 9)
 			{
 				_putchar((tot / 10) + '0');
 				_putchar((tot % 10) + '0');
+			} else if (tot < 9)
+			{
+				_putchar((tot % 10) + '0');
+			}
+			if (tot > 9 && incr < 9)
+			{
 				_putchar(',');
 				_putchar(' ');
 			} else if (tot < 9 && incr < 9)
 			{
-				_putchar((tot % 10) + '0');
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
