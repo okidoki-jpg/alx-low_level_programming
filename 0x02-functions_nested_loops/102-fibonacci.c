@@ -14,8 +14,8 @@ int main(void)
 	while (idx++ < 50)
 	{
 		next = prev + curr;
-		curr = next;
 		prev = curr;
+		curr = next;
 		printf("%d", next);
 		if (idx < 50)
 			printf(", ");
