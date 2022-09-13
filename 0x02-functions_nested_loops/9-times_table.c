@@ -12,24 +12,26 @@ void times_table(void)
 	int num = -1;
 	int tot;
 	int incr;
+
 	while (num++ < 9)
 	{
 		incr = -1;
 		while (incr++ < 9)
 		{
 			tot = num * incr;
-			if (tot > 9)
+			if (tot > 9 && incr < 9)
 			{
 				_putchar((tot / 10) + '0');
 				_putchar((tot % 10) + '0');
 				_putchar(',');
-			} else
+				_putchar(' ');
+			} else if (tot < 9 && incr < 9)
 			{
 				_putchar((tot % 10) + '0');
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
 			}
-			_putchar(' ');
 		}
 		_putchar(10);
 	}
