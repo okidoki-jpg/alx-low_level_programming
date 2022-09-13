@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _islower - determines lowercase
- * alphabet
+ * _isalpha - determines if character
+ * is alphabet
  * @c: function parameter
  * Return: 1 if found, else 0.
  */
