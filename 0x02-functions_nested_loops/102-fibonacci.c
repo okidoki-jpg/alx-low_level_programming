@@ -22,7 +22,6 @@ int main(void)
 		printf("%lu", next);
 		if (idx < 50)
 			printf(", ");
-		idx++;
 	}
 	printf("\n");
 	return (0);
