@@ -10,11 +10,12 @@
 
 void print_alphabet_x10(void)
 {
-	int idx = 97;
+	int idx;
 	int count = 0;
 
 	while (count < 10)
 	{
+		idx = 97;
 		while (idx < 123)
 		{
 			_putchar(idx++);
