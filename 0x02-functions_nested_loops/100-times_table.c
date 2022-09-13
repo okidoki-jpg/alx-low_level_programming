@@ -31,13 +31,13 @@ void print_times_table(int n)
 			{
 				_putchar((tot % 10) + '0');
 			}
-			if ((tot + num) < 10 && incr < 9)
+			if ((tot + num) < 10 && incr < 9 && !(n * n) == tot)
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(' ');
-			} else if (incr < 9)
+			} else if (incr < 9 && !(n * n) == tot)
 			{
 				_putchar(',');
 				_putchar(' ');
