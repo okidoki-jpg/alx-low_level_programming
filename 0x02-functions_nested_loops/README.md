@@ -14,4 +14,7 @@
 3-islower.c:
 	determine if letter is lowercase
 
+4-isalpha.c:
+	determine if letter is uppercase
+
 
