@@ -11,4 +11,7 @@
 	followed by a new line ten times.
 	prototype: void print_alphabet_x10(void);
 
+3-islower.c:
+	determine if letter is lowercase
+
 
