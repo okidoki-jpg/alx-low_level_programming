@@ -8,3 +8,7 @@
     comment out infinite loop bug
 
 
+2-largest_number.c:
+    fix 2-largest_number.c so it
+    prints ghe largest number
+
