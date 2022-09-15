@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_line - print '_' n times
+ * print_line - print '_' n time
+ * @n: size of line
  * Return: void
  */
 
