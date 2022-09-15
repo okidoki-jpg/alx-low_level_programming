@@ -7,3 +7,6 @@
 2-mul.c:
     return product of int a * int b
 
+3-print_numbers.c:
+    print ascii digits
+
