@@ -10,3 +10,6 @@
 3-print_numbers.c:
     print ascii digits
 
+4-print_most_numbers.c:
+    print all digits but 2 and 4
+
