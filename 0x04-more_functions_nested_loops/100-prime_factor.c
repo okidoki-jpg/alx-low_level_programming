@@ -9,14 +9,14 @@
 
 int main(void)
 {
-	unsigned int pf = 2;
-	unsigned int val = 612852475143;
+	long pf = 2;
+	long val = 612852475143;
 
 	while (++pf < val)
 	{
 		if (val % pf == 0)
 			val /= pf;
 	}
-	printf("%lu ", pf);
+	printf("%ld ", pf);
 	return (0);
 }
