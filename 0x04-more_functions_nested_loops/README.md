@@ -4,3 +4,6 @@
 1-isdigit.c:
     determine numeric value
 
+2-mul.c:
+    return product of int a * int b
+
