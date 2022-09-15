@@ -17,6 +17,6 @@ int main(void)
 		if (val % pf == 0)
 			val /= pf;
 	}
-	printf("%ld ", pf);
+	printf("%lu ", pf);
 	return (0);
 }
