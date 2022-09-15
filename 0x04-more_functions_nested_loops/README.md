@@ -19,3 +19,7 @@
 6-print_line.c:
     print '_' n times
 
+7-print_diagonal.c:
+    print diagonal line of n size
+    using '\'
+
