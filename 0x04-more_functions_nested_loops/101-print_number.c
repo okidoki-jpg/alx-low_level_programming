@@ -7,6 +7,7 @@
  * Return: exponentiated value
  */
 
+
 int powr(int val, int p)
 {
 	int i = 0, tmp = val;
@@ -17,6 +18,7 @@ int powr(int val, int p)
 		return (1);
 	return (val);
 }
+
 
 /**
  * print_number - print number using
@@ -50,5 +52,4 @@ void print_number(int n)
 		val = (n / powr(10, --len)) % 10;
 		_putchar(val + '0');
 	}
-	_putchar(10);
 }
