@@ -1,11 +1,6 @@
 #include "main.h"
 
 /**
- * print_number - print number using
- * putchar
- * @n: number to be printed
- * Return: void
- *
  * powr - exponetiate
  * @val: base
  * @p: exponent
@@ -14,14 +9,21 @@
 
 int powr(int val, int p)
 {
-    int i = 0, tmp = val;
-    
-    while (++i < p)
-        val *= tmp;
-    if (p == 0)
-        return (1);
-    return (val);
+	int i = 0, tmp = val;
+
+	while (++i < p)
+		val *= tmp;
+	if (p == 0)
+		return (1);
+	return (val);
 }
+
+/**
+ * print_number - print number using
+ * putchar
+ * @n: number to be printed
+ * Return: void
+ */
 
 void print_number(int n)
 {
