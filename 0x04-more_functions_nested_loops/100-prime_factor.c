@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	long pf = 2;
+	int pf = 2;
 	long val = 612852475143;
 
 	while (++pf < val)
@@ -17,6 +17,6 @@ int main(void)
 		if (val % pf == 0)
 			val /= pf;
 	}
-	printf("%lu ", pf);
+	printf("%i", pf);
 	return (0);
 }
