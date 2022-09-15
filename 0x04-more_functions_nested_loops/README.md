@@ -26,3 +26,8 @@
 8-print_square.c:
     print n x n square using '#'
 
+9-fizz_buzz.c:
+    print FizzBuzz for multiples of
+    3 & 5; Fizz for multiples of 3
+    and Buzz for multiples of 5
+
