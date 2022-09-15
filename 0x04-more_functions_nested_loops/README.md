@@ -39,3 +39,6 @@
     find the biggest prime factor of
     612852475143
 
+101-print_number.c:
+    print number using putchar
+
