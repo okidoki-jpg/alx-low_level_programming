@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * _isupper - determine uppercase letter
- * @c: ascii value being evaluated
- * Return: 1 if found, else 0
+ * main - print "FizzBuzz for multiples
+ * of 3 & 5, "Fizz" for multiples of 3
+ * and "Buzz" for multiples of 5
+ *
+ * Return: 0
  */
 
 int main(void)
@@ -22,7 +24,7 @@ int main(void)
 			printf("%d", n);
 
 		if (n < 100)
-			putchar(" ");
+			putchar(' ');
 	}
 	return (0);
 }
