@@ -5,16 +5,32 @@
  * putchar
  * @n: number to be printed
  * Return: void
+ *
+ * powr - exponetiate
+ * @val: base
+ * @p: exponent
+ * Return: exponentiated value
  */
+
+int powr(int val, int p)
+{
+    int i = 0, tmp = val;
+    
+    while (++i < p)
+        val *= tmp;
+    if (p == 0)
+        return (1);
+    return (val);
+}
 
 void print_number(int n)
 {
-	int n = 23465, tmp, val, len = 1;
+	int tmp, val, len = 1;
 
 	if (n < 0)
 	{
 		n = -n;
-		putchar('-');
+		_putchar('-');
 	}
 
 	tmp = n;
@@ -29,7 +45,7 @@ void print_number(int n)
 	/* print each number */
 	while (len)
 	{
-		val = (n / (int) pow(10, --len)) % 10;
-		putchar(val + '0');
+		val = (n / powr(10, --len)) % 10;
+		_putchar(val + '0');
 	}
 }
