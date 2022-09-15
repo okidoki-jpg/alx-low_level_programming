@@ -3,6 +3,7 @@
 /**
  * print_square - print n x n square
  * using '#'
+ * @size: dimension of square
  * Return: void
  */
 
