@@ -25,6 +25,8 @@ int main(void)
 
 		if (n < 100)
 			putchar(' ');
+		else
+			putchar(10);
 	}
 	return (0);
 }
