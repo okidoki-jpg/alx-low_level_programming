@@ -10,6 +10,6 @@ void print_numbers(void)
 	int idx = 0;
 
 	while (++idx < 10)
-		_putchar(idx);
+		_putchar(idx + '0');
 	_putchar(10);
 }
