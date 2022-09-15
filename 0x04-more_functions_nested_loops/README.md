@@ -16,3 +16,6 @@
 5-more_numbers.c:
     print digits 0 - 14 ten times
 
+6-print_line.c:
+    print '_' n times
+
