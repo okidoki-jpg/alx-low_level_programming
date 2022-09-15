@@ -50,4 +50,5 @@ void print_number(int n)
 		val = (n / powr(10, --len)) % 10;
 		_putchar(val + '0');
 	}
+	_putchar(10);
 }
