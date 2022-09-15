@@ -35,3 +35,7 @@
     print a n size triangle using '#'
 
 
+100-prime_factor.c:
+    find the biggest prime factor of
+    612852475143
+
