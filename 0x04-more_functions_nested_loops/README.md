@@ -31,3 +31,7 @@
     3 & 5; Fizz for multiples of 3
     and Buzz for multiples of 5
 
+10-print_triangle.:
+    print a n size triangle using '#'
+
+
