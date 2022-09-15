@@ -23,3 +23,6 @@
     print diagonal line of n size
     using '\'
 
+8-print_square.c:
+    print n x n square using '#'
+
