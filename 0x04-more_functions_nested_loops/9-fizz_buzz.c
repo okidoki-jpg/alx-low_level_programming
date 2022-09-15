@@ -13,13 +13,13 @@ int main(void)
 	while (n++ < 101)
 	{
 		if (n % 15 == 0)
-			puts("FizzBuzz");
+			printf("FizzBuzz ");
 		else if (n % 3 == 0)
-			puts("Fizz");
+			printf("Fizz ");
 		else if (n % 3 == 0)
-			puts("Buzz");
+			printf("Buzz ");
 		else
-			printf("%d\n", n);
+			printf("%d ", n);
 	}
 	return (0);
 }
