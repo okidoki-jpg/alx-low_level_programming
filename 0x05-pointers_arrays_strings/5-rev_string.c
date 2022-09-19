@@ -29,7 +29,7 @@ int _strlen(char *s)
 
 void rev_string(char *s)
 {
-	int len = _strlen(s) - 1;
+	int len = _strlen(s) - 1, i;
 	char *front = s, *end = s + len, tmp;
 
 	/**
@@ -37,7 +37,7 @@ void rev_string(char *s)
 	 * reverse happens by swapping two values
 	 */
 
-	for (int i = 0; i < len / 2; i++)
+	for (i = 0; i < len / 2; i++)
 	{
 		tmp = *end;
 		*end = *front;
