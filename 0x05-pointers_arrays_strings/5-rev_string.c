@@ -38,7 +38,7 @@ void rev_string(char *s)
 	 * reverse happens by swapping two values
 	 */
 
-	for (i = 0; i < len / 2; i++)
+	for (i = 0; i < len ; i++)
 	{
 		tmp = s[i];
 		s[i] = s[len];
