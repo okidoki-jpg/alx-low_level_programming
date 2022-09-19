@@ -25,3 +25,6 @@
 8-print_array.c:
     print n values of an array
 
+9-strcpy.c:
+    copy string to new pointer
+
