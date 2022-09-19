@@ -19,3 +19,6 @@
 6-puts2.c:
     print every other character from string
 
+7-puts_half.c:
+    print the last half of a string
+
