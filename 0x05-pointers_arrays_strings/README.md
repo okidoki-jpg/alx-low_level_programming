@@ -16,3 +16,6 @@
 5-rev_string.c:
     reverse a string
 
+6-puts2.c:
+    print every other character from string
+
