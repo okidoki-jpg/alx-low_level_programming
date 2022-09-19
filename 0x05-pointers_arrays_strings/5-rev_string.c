@@ -19,36 +19,31 @@ int _strlen(char *s)
 /**
  * rev_string - reverse a string
  * @s: string to reverse
- * len: size of string
  * *front: points to values from the front
  * *end: points to values from the end
  * tmp: temporarily holds end value during switch
- * *s: changing string always at start position
  */
 
 
 void rev_string(char *s)
 {
-	int len = _strlen(s) - 1, i;
-	char *front = s, *end = s + len, tmp;
+	int end = _strlen(s) - 1, front;
+	char tmp;
 
 	/**
-	 * loop through half the length of string because
-	 * reverse happens by swapping two values
+	 * move front index foward and swap values
 	 */
 
-	for (i = 0; i < len / 2; i++)
+	for (front = 0; front < end; front++)
 	{
-		tmp = *end;
-		*end = *front;
-		*front = tmp;
+		tmp = s[end];
+		s[end] = s[front];
+		s[front] = tmp;
 
 		/**
-		 * move front index forward
 		 * move end index back
 		 */
 
-		front++;
 		end--;
 	}
 }
