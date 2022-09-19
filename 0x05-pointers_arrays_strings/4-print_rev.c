@@ -31,5 +31,4 @@ void print_rev(char *s)
 	{
 		_putchar(s[idx--]);
 	}
-	_putchar(10);
 }
