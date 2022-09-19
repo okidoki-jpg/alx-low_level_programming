@@ -1,4 +1,19 @@
-#include "main.h"
+
+/**
+ * _strlen - get string length
+ * @s: string to evaluate
+ *
+ * Return: string length
+ */
+
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (s[len] != '\0')
+		len++;
+	return (len);
+}
 
 /**
  * print_rev - print string in reverse
