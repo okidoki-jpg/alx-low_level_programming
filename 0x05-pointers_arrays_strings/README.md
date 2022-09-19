@@ -22,3 +22,6 @@
 7-puts_half.c:
     print the last half of a string
 
+8-print_array.c:
+    print n values of an array
+
