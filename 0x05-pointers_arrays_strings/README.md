@@ -2,5 +2,8 @@
     update an integer pointer value to 98
 
 1-swap.c:
-    swap two integer pointer values
+    swap two integer values
+
+2-strlen.c:
+    return the length of a string
 
