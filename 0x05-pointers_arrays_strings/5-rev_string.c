@@ -29,7 +29,7 @@ int _strlen(char *s)
 
 void rev_string(char *s)
 {
-	int len = _strlen(s), i;
+	int len = _strlen(s) - 1, i;
 	char *front = s, *end = s + len, tmp;
 
 	/**
