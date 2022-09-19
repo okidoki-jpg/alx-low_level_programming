@@ -7,3 +7,6 @@
 2-strlen.c:
     return the length of a string
 
+3-puts.c:
+    print a string out
+
