@@ -24,10 +24,9 @@ int _strlen(char *s)
 
 void puts_half(char *str)
 {
-	int start = (_strlen(str) - 1) / 2;
+	int len = _strlen(s), start = (_strlen(str) - 1) / 2;
 
-	str += start;
-	while (str[start] != '\0')
+	while (start != len)
 	{
 		_putchar((int) str[start++]);
 	}
