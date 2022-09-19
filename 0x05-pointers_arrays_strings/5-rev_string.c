@@ -30,7 +30,8 @@ int _strlen(char *s)
 void rev_string(char *s)
 {
 	int len = _strlen(s) - 1, i;
-	char *front = s, *end = s + len, tmp;
+	/*char *front = s, *end = s + len, tmp;*/
+	char tmp;
 
 	/**
 	 * loop through half the length of string because
@@ -39,16 +40,17 @@ void rev_string(char *s)
 
 	for (i = 0; i < len / 2; i++)
 	{
-		tmp = *end;
-		*end = *front;
-		*front = tmp;
+		tmp = s[i];
+		s[i] = s[len];
+		s[len] = tmp;
 
 		/**
 		 * move front index forward
 		 * move end index back
 		 */
 
-		front++;
-		end--;
+		len--;
+		/*front++;
+		end--;*/
 	}
 }
