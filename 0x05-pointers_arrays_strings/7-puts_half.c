@@ -18,17 +18,17 @@ int _strlen(char *s)
 
 /**
  * puts_half - print the last half of a string
- * @s: string to print
+ * @str: string to print
  * Return: void
  */
 
 void puts_half(char *str)
 {
-	int start = (_strlen(s) - 1) / 2;
+	int start = (_strlen(str) - 1) / 2;
 
-	s += start;
-	while (s[start] != '\0')
+	str += start;
+	while (str[start] != '\0')
 	{
-		_putchar((int) s[start]);
+		_putchar((int) str[start]);
 	}
 }
