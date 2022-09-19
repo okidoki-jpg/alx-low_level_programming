@@ -10,3 +10,6 @@
 3-puts.c:
     print a string out
 
+4-print_rev.c:
+    print a string in reverse
+
