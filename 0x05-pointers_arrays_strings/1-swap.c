@@ -1,5 +1,5 @@
 /**
- * swap_int - swap two integer pointer values
+ * swap_int - swap two integer variable values
  * @a: first parameter
  * @b: second parameter
  *
@@ -8,7 +8,7 @@
 
 void swap_int(int *a, int *b)
 {
-	int *tmp = *a;
-	*a = *b;
-	*b = *tmp;
+	int tmp = a;
+	&a = b;
+	&b = tmp;
 }
