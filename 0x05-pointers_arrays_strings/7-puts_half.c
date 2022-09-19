@@ -30,5 +30,4 @@ void puts_half(char *str)
 	{
 		_putchar((int) str[start++]);
 	}
-	_putchar(10);
 }
