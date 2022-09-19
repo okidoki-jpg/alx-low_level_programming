@@ -26,10 +26,12 @@ int _strlen(char *s)
 void rev_string(char *s)
 {
 	int i = 0, idx = _strlen(s) - 1;
+	char str[idx];
 
 	while (idx >= 0)
 	{
 		str[i++] = s[idx--];
 	}
+	str[i] = '\0'
 	*s = *str;
 }
