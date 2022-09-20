@@ -28,3 +28,6 @@
 9-strcpy.c:
     copy string to new pointer
 
+100-atoi.c:
+    convert string to int
+
