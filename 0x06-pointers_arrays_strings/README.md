@@ -19,3 +19,6 @@
 6-cap_string.c:
     capitalize each word
 
+7-leet.c:
+    convert special letters to numbers
+
