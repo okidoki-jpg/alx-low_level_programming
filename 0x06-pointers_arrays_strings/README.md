@@ -7,3 +7,6 @@
 2-strncpy.c:
     copy n characters of a string
 
+3-strcmp.c:
+    compare two strings
+
