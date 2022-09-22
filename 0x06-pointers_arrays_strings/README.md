@@ -16,3 +16,6 @@
 5-string_toupper.c:
     convert lowercase to uppercase
 
+6-cap_string.c:
+    capitalize each word
+
