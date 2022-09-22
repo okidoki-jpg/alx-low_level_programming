@@ -13,3 +13,6 @@
 4-rev_array.c:
     reverse int array
 
+5-string_toupper.c:
+    convert lowercase to uppercase
+
