@@ -14,7 +14,7 @@ char *cap_string(char *src)
 	{
 		for (j = 0; sp[j] != '\0'; j++)
 		{
-			if (src[i - 1] == sp[j] &&
+			if ((i == 0 || src[i - 1] == sp[j]) &&
 				(src[i] >= 'a' && src[i] <= 'z'))
 			{
 				src[i] -= 32;
