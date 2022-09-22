@@ -10,3 +10,6 @@
 3-strcmp.c:
     compare two strings
 
+4-rev_array.c:
+    reverse int array
+
