@@ -13,3 +13,6 @@
 4-strpbrk.c:
     implement strpbrk function
 
+5-strstr.c:
+    implement strstr function
+
