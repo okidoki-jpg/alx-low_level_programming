@@ -24,7 +24,6 @@ char *_strstr(char *haystack, char *needle)
 			{
 				i -= idx;
 				idx = 0;
-				break;
 			}
 			else
 			{
