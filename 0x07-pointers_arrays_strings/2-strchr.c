@@ -1,5 +1,5 @@
 /**
- * strchr - locate first occurences of a character
+ * _strchr - locate first occurences of a character
  * in a string
  * @s: string to evaluate
  * @c: character to find
