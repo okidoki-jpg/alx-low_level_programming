@@ -8,7 +8,7 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i, j, len = 0, idx = 0;
+	unsigned int i, len = 0, idx = 0;
 
 	while (*++needle)
 	{
@@ -25,7 +25,7 @@ char *_strstr(char *haystack, char *needle)
 			else
 				idx = 0;
 			if (idx == len)
-				return (haystack + (i - idx))
+				return (haystack + (i - idx));
 		}
 	}
 	return ('\0');
