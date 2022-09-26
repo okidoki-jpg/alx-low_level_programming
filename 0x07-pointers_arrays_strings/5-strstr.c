@@ -30,7 +30,9 @@ char *_strstr(char *haystack, char *needle)
 			{
 				idx++;
 				if (idx == len)
+				{
 					return (haystack + (i - idx));
+				}
 				i++;
 			}
 		}
