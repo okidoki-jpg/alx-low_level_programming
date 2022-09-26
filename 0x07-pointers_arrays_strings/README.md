@@ -4,3 +4,6 @@
 1-memcpy.c:
     implement memcpy function
 
+2-strchr.c:
+    implement strchr function
+
