@@ -7,3 +7,6 @@
 2-strchr.c:
     implement strchr function
 
+3-strspn.c:
+    implement strspn function
+
