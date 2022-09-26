@@ -9,12 +9,10 @@
 
 char *_strchr(char *s, char c)
 {
-	unsigned int i = -1;
-
 	while (s++)
 	{
 		if (*s == c)
-			return (s)
+			return (s);
 	}
 	return ('\0');
 }
