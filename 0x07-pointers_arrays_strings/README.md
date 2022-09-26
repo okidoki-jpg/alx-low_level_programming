@@ -10,3 +10,6 @@
 3-strspn.c:
     implement strspn function
 
+4-strpbrk.c:
+    implement strpbrk function
+
