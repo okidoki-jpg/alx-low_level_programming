@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_chessboard - print a 2D array representing a
  * chessboard
@@ -14,8 +16,8 @@ void print_chessboard(char (*a)[8])
 	{
 		for (j = 0; j < 8; j++)
 		{
-			printf("%c", a[i][j]);
+			_putchar(a[i][j]);
 		}
-	printf("\n");
+	_putchar(10);
 	}
 }
