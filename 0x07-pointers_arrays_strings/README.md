@@ -16,3 +16,9 @@
 5-strstr.c:
     implement strstr function
 
+7-print_chessboard.c:
+    print 2D array representing a chessboard
+
+8-print_diagsums.c:
+    print sum of digits on diagonal axis
+
