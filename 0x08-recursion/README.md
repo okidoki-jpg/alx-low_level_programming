@@ -4,3 +4,6 @@
 1-print_rev_recursion.c:
     print string in reverse recursively
 
+2-strlen_recursion.c:
+    get string length recursively
+
