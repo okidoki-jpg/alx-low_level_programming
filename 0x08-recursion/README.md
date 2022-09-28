@@ -13,3 +13,6 @@
 4-pow_recursion.c:
     exponentiate x by y recursively
 
+5-sqrt_recursion.c:
+    get square root of number recursively
+
