@@ -10,3 +10,6 @@
 3-factorial.c:
     return factorial of given number
 
+4-pow_recursion.c:
+    exponentiate x by y recursively
+
