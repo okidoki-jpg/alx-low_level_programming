@@ -24,5 +24,5 @@ int prime(int fact, int eval)
 
 int is_prime_number(int n)
 {
-	return (prime(1, n));
+	return (prime(2, n));
 }
