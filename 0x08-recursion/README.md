@@ -1,3 +1,6 @@
 0-puts_recursion.c:
     print a string with _putchar recursively
 
+1-print_rev_recursion.c:
+    print string in reverse recursively
+
