@@ -10,7 +10,7 @@ int prime(int fact, int eval)
 {
 	if (eval == fact)
 		return (1);
-	else if (eval % fact == 0)
+	else if (eval == 1 || eval % fact == 0)
 		return (0);
 	return (prime(fact + 1, eval));
 }
