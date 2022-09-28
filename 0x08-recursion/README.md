@@ -7,3 +7,6 @@
 2-strlen_recursion.c:
     get string length recursively
 
+3-factorial.c:
+    return factorial of given number
+
