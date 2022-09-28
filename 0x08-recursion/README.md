@@ -16,3 +16,6 @@
 5-sqrt_recursion.c:
     get square root of number recursively
 
+6-is_prime_number.c:
+    determine if n is a prime number recursively
+
