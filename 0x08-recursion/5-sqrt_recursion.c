@@ -12,7 +12,7 @@ int root(int base, int eval)
 		return (base);
 	else if (base * base > eval)
 		return (-1);
-	return (root(base++, eval));
+	return (root(base + 1, eval));
 }
 
 /**
