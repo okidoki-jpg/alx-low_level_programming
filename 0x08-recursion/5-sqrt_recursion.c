@@ -1,5 +1,5 @@
 /**
- * root - find natural square root
+ * root - determine natural square root of eval
  * @base: iterating variable
  * @eval: number evaluated againgst
  *

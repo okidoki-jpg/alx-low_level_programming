@@ -6,7 +6,7 @@
  * Return: 1 if succesful, else 0
  */
 
-int root(int fact, int eval)
+int prime(int fact, int eval)
 {
 	if (eval == fact)
 		return (1);
