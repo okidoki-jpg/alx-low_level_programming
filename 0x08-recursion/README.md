@@ -19,3 +19,6 @@
 6-is_prime_number.c:
     determine if n is a prime number recursively
 
+100-is_palindrome.c:
+    evaluate palindrome recursively
+
