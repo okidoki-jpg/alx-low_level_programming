@@ -42,5 +42,5 @@ int is_pal(char *s, int front, int back)
 
 int is_palindrome(char *s)
 {
-	return (is_pal(s, 0, len(s) - 1);
+	return (is_pal(s, 0, len(s) - 1));
 }
