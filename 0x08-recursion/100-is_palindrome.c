@@ -27,7 +27,7 @@ int is_pal(char *s, int front, int back)
 {
 	if (front >= back)
 		return (1);
-	if (s[front] != s[back]);
+	if (s[front] != s[back])
 		return (0);
 	return is_pal(s, front + 1, back - 1);
 }
