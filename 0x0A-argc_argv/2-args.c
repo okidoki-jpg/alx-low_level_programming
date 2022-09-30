@@ -17,5 +17,9 @@ int main(int argc, char **argv)
 			printf("%s\n", *argv++);
 		}
 	}
+	else
+	{
+		(void) argv;
+	}
 	return (0);
 }
