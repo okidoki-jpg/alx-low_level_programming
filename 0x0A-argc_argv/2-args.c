@@ -20,6 +20,7 @@ int main(int argc, char **argv)
 	else
 	{
 		(void) argv;
+		(void) argc;
 	}
 	return (0);
 }
