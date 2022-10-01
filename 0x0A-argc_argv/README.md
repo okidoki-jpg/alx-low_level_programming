@@ -10,3 +10,6 @@
 3-mul.c:
     multiply two numbers from argv
 
+4-add.c:
+    add positive values from argv
+
