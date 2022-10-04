@@ -21,29 +21,33 @@ char *str_concat(char *s1, char *s2)
 		for (idx = 0; s1[idx]; len1 = ++idx)
 			continue;
 	}
-	else
-		s1 = '\0';
 
 	if (s2)
 	{
 		for (idx = 0; s2[idx]; len2 = ++idx)
 			continue;
 	}
-	else
-		s2 = '\0';
 
 	cat = malloc(sizeof(char) * (len1 + len2) + 1);
 	if (cat == NULL)
 		return (NULL);
 
-	for (idx = 0; idx < len1; idx++)
+	if (s1)
 	{
-		cat[idx] = s1[idx];
+		for (idx = 0; idx < len1; idx++)
+		{
+			cat[idx] = s1[idx];
+		}
+		if (!(s2))
+			cat[idx] = '\0';
 	}
 
-	for (idx = 0; idx <= len2; idx++)
+	if (s2)
 	{
-		cat[len1 + idx] = s2[idx];
+		for (idx = 0; idx <= len2; idx++)
+		{
+			cat[len1 + idx] = s2[idx];
+		}
 	}
 	return (cat);
 }
