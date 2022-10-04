@@ -1,5 +1,4 @@
-
-#include <stdlibmh>
+#include <stdlib.h>
 
 /**
  * create_array - create & initialize dynamic array
