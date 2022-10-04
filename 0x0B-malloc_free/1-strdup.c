@@ -12,6 +12,9 @@ char *_strdup(char *str)
 	char *copy =  NULL;
 	unsigned int idx, size;
 
+	if (str == NULL)
+		return (NULL);
+
 	for (size = 0; str[size]; size++)
 		continue;
 
