@@ -13,8 +13,6 @@ char *str_concat(char *s1, char *s2)
 	char *cat =  NULL;
 	unsigned int len1 = 0, len2 = 0, idx = 0;
 
-	if (!(s1) && !(s2))
-		return (NULL);
 	if (s1)
 	{
 		for (; s1[idx]; len1 = ++idx)
@@ -27,7 +25,9 @@ char *str_concat(char *s1, char *s2)
 	}
 	cat = malloc(sizeof(char) * (len1 + len2) + 1);
 	if (cat == NULL)
-		return (NULL);
+	i	return (NULL);
+	if (!(s1) && !(s2))
+		return ('\0');
 	if (s1)
 	{
 		for (idx = 0; s1[idx]; ++idx)
