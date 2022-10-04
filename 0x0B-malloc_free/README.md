@@ -1,6 +1,3 @@
-0-create_array.c:
-    create & initialize dynamic array
-
-1-strdup.c:
-    copy string to newly allocated memory
+2-str_concat.c:
+    concatenate two strings to new memory
 
