@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	if (copy == NULL)
 		return (NULL);
 
-	for (idx = 0; idx < size; idx++)
+	for (idx = 0; idx <= size; idx++)
 	{
 		copy[idx] = str[idx];
 	}
