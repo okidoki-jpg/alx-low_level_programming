@@ -11,16 +11,12 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *cat =  NULL;
-	unsigned int len1 = NULL, len2 = NULL, idx;
+	unsigned int len1 = 0, len2 = 0, idx;
 
 	if (s1 != NULL)
 	{
 		for (idx = 0; s1[idx]; len1 = idx++)
 			continue;
-	}
-	else
-	{
-		len1 = 0;
 	}
 
 	if (s2 != NULL)
@@ -28,25 +24,17 @@ char *str_concat(char *s1, char *s2)
 		for (idx = 0; s2[idx]; len2 = idx++)
 			continue;
 	}
-	else
-	{
-		s2 = '\0';
-		len2 = 0;
-	}
 
-	if (len1 == len2 == 0)
+	if (!(len1) && !(len2))
 		return (NULL);
 
 	cat = malloc(sizeof(char) * (len1 + len2));
 	if (cat == NULL)
 		return (NULL);
 
-	if (len1 > 0)
+	for (idx = 0; s1[idx]; idx++)
 	{
-		for (idx = 0; s1[idx]; idx++)
-		{
-			cat[idx] = s1[idx];
-		}
+		cat[idx] = s1[idx];
 	}
 
 	for (idx = 0; idx <= len2; idx++)
