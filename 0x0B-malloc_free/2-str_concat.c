@@ -39,7 +39,7 @@ char *str_concat(char *s1, char *s2)
 			cat[idx] = s1[idx];
 		}
 		if (!(s2))
-			cat[idx] = '\0';
+			cat[idx++] = '\0';
 	}
 
 	if (s2)
