@@ -26,5 +26,6 @@ char *_strdup(char *str)
 	{
 		copy[idx] = str[idx];
 	}
+	free(copy);
 	return (copy);
 }
