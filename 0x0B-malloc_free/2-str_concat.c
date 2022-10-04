@@ -13,22 +13,26 @@ char *str_concat(char *s1, char *s2)
 	char *cat =  NULL;
 	unsigned int len1 = 0, len2 = 0, idx;
 
-	if (s1 != NULL)
+	if (!(s1) && !(s2))
+		return (NULL);
+
+	if (s1)
 	{
 		for (idx = 0; s1[idx]; len1 = ++idx)
 			continue;
 	}
+	else
+		s1 = '\0';
 
-	if (s2 != NULL)
+	if (s2)
 	{
 		for (idx = 0; s2[idx]; len2 = ++idx)
 			continue;
 	}
+	else
+		s2 = '\0';
 
-	if (!(len1) && !(len2))
-		return (NULL);
-
-	cat = malloc(sizeof(char) * (len1 + len2));
+	cat = malloc(sizeof(char) * (len1 + len2) + 1);
 	if (cat == NULL)
 		return (NULL);
 
