@@ -15,20 +15,20 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 != NULL)
 	{
-		for (idx = 0; s1[idx]; len1 = idx++)
+		for (idx = 0; s1[idx]; len1 = ++idx)
 			continue;
 	}
 
 	if (s2 != NULL)
 	{
-		for (idx = 0; s2[idx]; len2 = idx++)
+		for (idx = 0; s2[idx]; len2 = ++idx)
 			continue;
 	}
 
 	if (!(len1) && !(len2))
 		return (NULL);
 
-	cat = malloc(sizeof(char) * (len1 + len2) + 1);
+	cat = malloc(sizeof(char) * (len1 + len2));
 	if (cat == NULL)
 		return (NULL);
 
