@@ -43,7 +43,6 @@ char *str_concat(char *s1, char *s2)
 		{
 			cat[len1 + idx] = s2[idx];
 		}
-		cat[len1 + idx] = '\0';
 	}
 	return (cat);
 }
