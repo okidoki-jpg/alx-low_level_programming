@@ -1,3 +1,6 @@
+
+#include <stdlibmh>
+
 /**
  * create_array - create & initialize dynamic array
  * @size: size of array
