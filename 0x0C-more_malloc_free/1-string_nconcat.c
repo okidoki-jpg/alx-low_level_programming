@@ -15,24 +15,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str;
 
 	if (!(s1))
-	{
 		s1 = "";
-	}
-	else
-	{
-		while (s1[l1++])
-			continue;
-	}
+	while (s1[l1++])
+		continue;
 
 	if (!(s2))
-	{
 		s2 = "";
-	}
-	else
-	{
-		while (s2[l2++])
-			continue;
-	}
+	while (s2[l2++])
+		continue;
 
 	str = malloc(sizeof(char) * (l1 + l2) + 1);
 	if (!(str))
@@ -50,6 +40,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			break;
 	}
 
-	str[i + j + 1] = '\0';
+	str[i + j] = '\0';
 	return (str);
 }
