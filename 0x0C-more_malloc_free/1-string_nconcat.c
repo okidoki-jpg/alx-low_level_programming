@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
  * string_nconcat - join n number of charaters to string
  * @s1: string to append to
