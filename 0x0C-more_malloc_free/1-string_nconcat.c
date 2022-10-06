@@ -20,7 +20,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		while (s1[++l1])
+		while (s1[l1++])
 			continue;
 	}
 
@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		while (s2[++l2])
+		while (s2[l2++])
 			continue;
 	}
 
@@ -50,6 +50,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			break;
 	}
 
-	str[i + j + 1] = '\0';
+	str[i + j] = '\0';
 	return (str);
 }
