@@ -16,7 +16,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (!(s1))
 	{
-		s1 = " ";
+		s1 = "";
 	}
 	else
 	{
@@ -26,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (!(s2))
 	{
-		s2 = " ";
+		s2 = "";
 	}
 	else
 	{
@@ -50,9 +50,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			break;
 	}
 
-	if (str)
-		str[i + j] = '\0';
-	else
-		str = "\0";
+	str[i + j + 1] = '\0';
 	return (str);
 }
