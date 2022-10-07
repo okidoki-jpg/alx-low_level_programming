@@ -25,6 +25,4 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	arr = mid;
 	return (arr);
-
-
 }
