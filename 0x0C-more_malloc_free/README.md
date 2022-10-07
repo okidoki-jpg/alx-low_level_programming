@@ -7,3 +7,6 @@
 2-calloc.c:
     allocate, and assign 0 to, new memory
 
+3-array_range.c:
+    populate new array with a range of numbers
+
