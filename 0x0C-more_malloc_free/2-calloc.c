@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
  * _calloc - allocate, and assign 0 to, new memory
  * @nmemb: size of array
@@ -9,18 +11,19 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *arr;
-	unsigned int i;
+	unsigned int *mid, i;
 
 	if (!nmemb || !size)
 		return (NULL);
 
-	arr = malloc(sizeof(size) * nmemb);
-	if (!arr)
+	mid = malloc(size * nmemb);
+	if (!mid)
 		return (NULL);
 
-	for (i = 0; i < nmemb; i++)
-		arr[i] = 0;
+	for (i = 0; i < (size * nmemb); i++)
+		mid[i] = 0;
 
+	arr = mid;
 	return (arr);
 
 
