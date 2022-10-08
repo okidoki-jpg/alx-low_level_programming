@@ -10,3 +10,6 @@
 3-array_range.c:
     populate new array with a range of numbers
 
+100-realloc.c:
+    reallocate some memory
+
