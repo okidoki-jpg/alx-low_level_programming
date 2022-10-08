@@ -5,6 +5,8 @@
  * @ptr: pointer to old memory
  * @old_size: bytes of old memory
  * @new_size: bytes of new memory
+ *
+ * Return: pointer to realocated memory
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
@@ -18,7 +20,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_size == 0 && ptr)
 		return (NULL);
 
-	reference = malloc(old_size + new_size);
+	reference = malloc(new_size);
 	if (!reference)
 		return (NULL);
 
