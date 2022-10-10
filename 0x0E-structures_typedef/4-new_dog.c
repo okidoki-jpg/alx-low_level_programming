@@ -50,6 +50,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 	return (doggo);
 }
 
+/**
+ * len - deterine string length
+ * @str: string to meassure
+ *
+ * Rerurn: count of string characters
+ */
+
 int len(char *str)
 {
 	int c = 0;
@@ -61,6 +68,12 @@ int len(char *str)
 	}
 	return (c);
 }
+
+/**
+ * cpy - copy a string to a location
+ * @dest: new locstion for copy of string
+ * @str: string being copied
+ */
 
 char *cpy(char *dest, char *str)
 {
