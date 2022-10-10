@@ -72,6 +72,8 @@ int len(char *str)
  * cpy - copy a string to a location
  * @dest: new locstion for copy of string
  * @str: string being copied
+ *
+ * Return: string copied to new destination
  */
 
 char *cpy(char *dest, char *str)
