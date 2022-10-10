@@ -1,3 +1,5 @@
+#include "dog.h"
+
 /**
  * free_dog - free dog attributes
  * @d: dog object
