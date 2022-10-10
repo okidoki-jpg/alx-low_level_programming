@@ -61,10 +61,9 @@ int len(char *str)
 {
 	int c = 0;
 
-	while (*str)
+	for (; *str; str++)
 	{
 		c++;
-		str++;
 	}
 	return (c);
 }
