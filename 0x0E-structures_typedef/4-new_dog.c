@@ -17,12 +17,12 @@ char *cpy(char *dest, char *str);
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *doggo;
-	int name_len, own_len;
+	int name_len = 0, own_len = 0;
 
 	if (name != NULL && owner != NULL)
 	{
 		doggo = malloc(sizeof(dog_t));
-		if (!doggo)
+		if (doggo == NULL)
 			return (NULL);
 
 		name_len = len(name) + 1;
