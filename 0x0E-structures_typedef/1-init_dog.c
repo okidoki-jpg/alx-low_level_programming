@@ -1,3 +1,5 @@
+#include "dog.h"
+
 /**
  * init_dog - initialize variable with dog struct
  * @d: dog struct
