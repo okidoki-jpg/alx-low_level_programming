@@ -21,12 +21,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (name != NULL && owner != NULL)
 	{
+		name_len = len(name) + 1;
+		own_len = len(owner) + 1;
+
 		doggo = malloc(sizeof(dog_t));
 		if (doggo == NULL)
 			return (NULL);
-
-		name_len = len(name) + 1;
-		own_len = len(owner) + 1;
 
 		doggo->name = malloc(sizeof(char) * name_len);
 		if (doggo->name == NULL)
