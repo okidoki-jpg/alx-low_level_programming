@@ -19,14 +19,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *doggo;
 	int name_len = 0, own_len = 0;
 
-	if (name != NULL && owner != NULL)
+	if (name && owner)
 	{
-		name_len = len(name) + 1;
-		own_len = len(owner) + 1;
-
 		doggo = malloc(sizeof(dog_t));
 		if (doggo == NULL)
 			return (NULL);
+
+		name_len = len(name) + 1;
+		own_len = len(owner) + 1;
 
 		doggo->name = malloc(sizeof(char) * name_len);
 		if (doggo->name == NULL)
@@ -54,23 +54,24 @@ dog_t *new_dog(char *name, float age, char *owner)
  * len - deterine string length
  * @str: string to meassure
  *
- * Rerurn: count of string characters
+ * Return: count of string characters
  */
 
 int len(char *str)
 {
 	int c = 0;
 
-	for (; *str; str++)
+	while (*str)
 	{
 		c++;
+		str++;
 	}
 	return (c);
 }
 
 /**
  * cpy - copy a string to a location
- * @dest: new locstion for copy of string
+ * @dest: new location for copy of string
  * @str: string being copied
  *
  * Return: string copied to new destination
@@ -82,7 +83,7 @@ char *cpy(char *dest, char *str)
 
 	for (i = 0; str[i]; i++)
 		dest[i] = str[i];
-	dest[i++] = '\0';
+	dest[i] = '\0';
 
 	return (dest);
 }
