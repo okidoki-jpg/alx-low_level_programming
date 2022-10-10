@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "dog.h"
 
 /**
  * print_dog - print dog struct attributes
@@ -11,19 +12,19 @@ void print_dog(struct dog *d)
 {
 	if (d)
 	{
-		if (d.name)
-			print("Name: %s\n", d.name)
+		if (d->name)
+			printf("Name: %s\n", d->name);
 		else
-			print("Name: (nil)\n")
+			printf("Name: (nil)\n");
 
-		if (d.age)
-			print("Age: %f\n", d.age)
+		if (d->age)
+			printf("Age: %f\n", d->age);
 		else
-			print("Age: (nil)\n")
+			printf("Age: (nil)\n");
 
-		if (d.owner)
-			print("Owner: %s\n", d.owner)
+		if (d->owner)
+			printf("Owner: %s\n", d->owner);
 		else
-			print("Owner: (nil)\n")
+			printf("Owner: (nil)\n");
 	}
 }
