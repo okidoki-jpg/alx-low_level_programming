@@ -4,3 +4,6 @@
 1-pi.h:
     define PI macro to hold '3.14159265359'
 
+2-main.c:
+    print file name using macro
+
