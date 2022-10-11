@@ -7,3 +7,9 @@
 2-main.c:
     print file name using macro
 
+3-function_like_macro.h:
+    create ABS function-like macro
+
+4-sum.h:
+    create SUM functiin-like macro
+
