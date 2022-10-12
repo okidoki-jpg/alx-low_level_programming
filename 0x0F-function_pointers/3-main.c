@@ -20,7 +20,7 @@ int main(int ac, char **av)
 	if (s[1])
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 	res = (*get_op_func(s))(a, b);
 
