@@ -2,6 +2,14 @@
 #include <stdlib.h>
 #include "3-calc.h"
 
+/**
+ * main - begining of calculator with some error checking
+ * @ac: argument count
+ * @av: argument vector
+ *
+ * Return: 0 is successful
+ */
+
 int main(int ac, char **av)
 {
 	char *s;
