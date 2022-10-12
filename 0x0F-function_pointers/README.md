@@ -7,3 +7,6 @@
 2-int_index.c:
     match a number in an array using pointer to function
 
+3-main.c:
+    create calculator with pointer to function
+
