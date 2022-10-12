@@ -15,14 +15,14 @@ int main(int ac, char **av)
 	char *s;
 	int a, b, res;
 
-	if (ac < 4)
+	if (ac != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	a = atoi(av[1]);
-	b = atoi(av[3]);
+	a = (int) atoi(av[1]);
+	b = (int) atoi(av[3]);
 	s = av[2];
 
 	if (s[1] != '\0')
