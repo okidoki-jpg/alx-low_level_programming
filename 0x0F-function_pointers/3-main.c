@@ -21,8 +21,8 @@ int main(int ac, char **av)
 		exit(98);
 	}
 
-	a = (int) atoi(av[1]);
-	b = (int) atoi(av[3]);
+	a = atoi(av[1]);
+	b = atoi(av[3]);
 	s = av[2];
 
 	if (s[1] != '\0')
