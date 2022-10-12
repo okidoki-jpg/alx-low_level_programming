@@ -25,7 +25,7 @@ int main(int ac, char **av)
 	b = atoi(av[3]);
 	s = av[2];
 
-	if (s[2])
+	if (s[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
