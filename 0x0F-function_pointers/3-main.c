@@ -16,12 +16,12 @@ int main(int ac, char **av)
 	a = atoi(av[1]);
 	b = atoi(av[3]);
 	s = av[2];
+
 	if (s[1])
 	{
 		printf("Error\n");
-		exit(99);
+		exit(98);
 	}
-
 	res = (*get_op_func(s))(a, b);
 
 	if (!res && res != 0)
