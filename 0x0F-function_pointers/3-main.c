@@ -15,7 +15,7 @@ int main(int ac, char **av)
 	char *s;
 	int a, b, res;
 
-	if (ac != 4)
+	if (ac < 4)
 	{
 		printf("Error\n");
 		exit(98);
