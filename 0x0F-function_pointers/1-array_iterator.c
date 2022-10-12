@@ -13,7 +13,6 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	typedef size_t unsigned int;
 	unsigned int i;
 
 	if (action)
