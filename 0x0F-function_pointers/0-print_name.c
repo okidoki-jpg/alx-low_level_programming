@@ -10,5 +10,7 @@
 
 void print_name(char *name, void (*f)(char *))
 {
+	if (!name)
+		return (-1);
 	f(name);
 }
