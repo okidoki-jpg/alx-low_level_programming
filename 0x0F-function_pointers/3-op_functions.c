@@ -1,5 +1,6 @@
 #include "3-calc.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * op_add - addition function
@@ -53,7 +54,7 @@ int op_mul(int a, int b)
 
 int op_div(int a, int b)
 {
-	if (!b)
+	if (!b || !a)
 	{
 		printf("Error\n");
 		exit(100);
@@ -72,7 +73,7 @@ int op_div(int a, int b)
 
 int op_mod(int a, int b)
 {
-	if (!b)
+	if (!b || !a)
 	{
 		printf("Error\n");
 		exit(100);
