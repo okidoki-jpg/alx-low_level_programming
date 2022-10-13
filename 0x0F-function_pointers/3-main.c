@@ -14,6 +14,7 @@ int main(int ac, char **av)
 {
 	char *s;
 	int a, b, res;
+	int (*op_t)(int, int);
 
 	if (ac != 4)
 	{
@@ -25,19 +26,15 @@ int main(int ac, char **av)
 	b = atoi(av[3]);
 	s = av[2];
 
-	if (s[1] != '\0')
-	{
-		printf("Error\n");
-		exit(99);
-	}
-	res = (*get_op_func(s))(a, b);
+	op_t = get_op_func(s);
 
-	if (!res && res != 0)
+	if (!op_t)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
+	res = op_t(a, b);
 	printf("%d\n", res);
 	return (0);
 }
