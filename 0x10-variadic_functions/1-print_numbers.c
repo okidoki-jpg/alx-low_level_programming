@@ -4,7 +4,7 @@
 
 /**
  * print_numbers - print each argument on new line
- * @seperator: seperating character
+ * @separator: seperating character
  * @n: last named argument of function
  *
  * Return: void
