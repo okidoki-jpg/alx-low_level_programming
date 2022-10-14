@@ -3,23 +3,26 @@
 #include <stdio.h>
 
 /**
- * print_numbers - print each argument with a separator
- * @separator: separating string
+ * print_strings - print each argument with a seperator
+ * @separator: seperating string
  * @n: last named argument of function
  *
  * Return: void
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
-	unsigned int x, i = 0;
+	unsigned int i = 0;
+	char *x;
 
 	va_start(args, n);
 	for (i = 0; i < n; i++)
 	{
-		x = va_arg(args, int);
-		printf("%d", x);
+		x = va_arg(args, char *);
+		if (!x)
+			x = "(nil)";
+		printf("%s", x);
 		if (separator && i + 1 < n)
 			printf("%s", separator);
 	}
