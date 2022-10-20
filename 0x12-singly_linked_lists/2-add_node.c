@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <string.h>
 #include <stdlib.h>
 
 /**
@@ -11,7 +12,7 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	int len = _strlen(str);
+	size_t len = _strlen(str);
 	list_t *node = malloc(sizeof (list_t));
 
 	if (!node)
@@ -32,9 +33,9 @@ list_t *add_node(list_t **head, const char *str)
  * Return: length of string
  */
 
-int _strlen(char *str)
+size_t _strlen(char *str)
 {
-	int i = 0;
+	size_t i = 0;
 
 	while (*str)
 		i++;
