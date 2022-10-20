@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <string.h>
-#include <stdlib.h>
 
 /**
  * add_node - add node to linked list
@@ -37,10 +35,7 @@ int _strlen(const char *str)
 	int i = 0;
 
 	while (str[i])
-	{
 		i++;
-	}
-	str++;
 
 	return (i);
 }
