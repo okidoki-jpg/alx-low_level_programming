@@ -31,3 +31,6 @@
 10-delete_nodeint.c:
     delete node at given index
 
+100-reverse_listint.c:
+    reverse the elements of a linked list
+
