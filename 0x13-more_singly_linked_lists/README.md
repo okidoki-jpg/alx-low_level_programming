@@ -13,3 +13,6 @@
 4-free_listint.c:
     free linked list memory
 
+5-free_listint2.c:
+    free listint memory, make head NULL
+
