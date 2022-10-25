@@ -28,3 +28,6 @@
 9-insert_nodeint.c:
     insert node at given index
 
+10-delete_nodeint.c:
+    delete node at given index
+
