@@ -19,3 +19,9 @@
 6-pop_listint.c:
     pop the head node and return it's value
 
+7-get_nodeint.c:
+    get node at given index
+
+8-sum_listint.c:
+    calculate sum of linked list values
+
