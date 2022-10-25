@@ -7,3 +7,9 @@
 2-add_nodeint.c:
     add node to begining of listint linked list
 
+3-add_nodeint_end.c:
+    add node to end of listint linked list
+
+4-free_listint.c:
+    free linked list memory
+
