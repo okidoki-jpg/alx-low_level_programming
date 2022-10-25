@@ -16,3 +16,6 @@
 5-free_listint2.c:
     free listint memory, make head NULL
 
+6-pop_listint.c:
+    pop the head node and return it's value
+
