@@ -32,6 +32,9 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		pop = pop->next;
 	}
 
+	if (!pop->next)
+		return (-1);
+
 	pop->next = pop->next->next;
 	free(pop->next);
 	return (1);
