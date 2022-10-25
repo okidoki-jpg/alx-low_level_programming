@@ -25,3 +25,6 @@
 8-sum_listint.c:
     calculate sum of linked list values
 
+9-insert_nodeint.c:
+    insert node at given index
+
