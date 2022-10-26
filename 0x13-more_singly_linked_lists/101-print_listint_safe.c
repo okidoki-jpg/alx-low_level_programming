@@ -22,15 +22,13 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		if (set(node, head, res))
 		{
-			printf("[%p] %d\n", (void *)node, node->n);
-			node = node->next;
+			printf("[%p] %d\n", (void *)head, head->n);
+			head = head->next;
 			res++;
 		}
 		else
-			break;
+			exit(98);
 	}
-	if (node)
-		printf("[%p] %d\n", (void *)node, node->n);
 
 
 	return (res);
@@ -42,7 +40,7 @@ int set(const listint_t *node, const listint_t *head, int res)
 
 	while (node != head)
 	{
-		head = head->next;
+		node = node->next;
 		idx++;
 	}
 	if (idx == res)
