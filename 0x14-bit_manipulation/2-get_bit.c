@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * get_bit - return bit at given index
  * @n: number to read
  * @index: location of bit to find
