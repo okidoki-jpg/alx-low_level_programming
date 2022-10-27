@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -17,10 +15,10 @@ size_t print_listint(listint_t *h)
 	if (h == NULL)
 		return (0);
 
-	while (h->next != NULL)
+	while (h->next)
 	{
-		size++;
 		printf("%d\n", h->n);
+		size++;
 		h = h->next;
 	}
 	printf("%d\n", h->n);
