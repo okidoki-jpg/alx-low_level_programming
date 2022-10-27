@@ -1,27 +1,23 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "lists.h"
 
 /**
- * free_listint2 - clears a singly liked list.
- * @head: Singly linked list head pointer
+ * free_listint2 - free listint memory, make head NULL
+ * @head: entry node into the linked list
  *
- * Description: deletes all the nodes of the singly linked list
- * Return: void (Nothing)
+ * Return: void
  */
+
 void free_listint2(listint_t **head)
 {
-	listint_t *temp;
+	listint_t *next;
 
-	if (head == NULL)
+	if (!head)
 		return;
 
-	while ((*head) != NULL)
+	while (*head)
 	{
-		temp = (*head);
-		(*head) = (*head)->next;
-		free(temp);
+		next = (*head)->next;
+		free(*head);
+		*head = next;
 	}
-
-	temp = NULL;
 }
