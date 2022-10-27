@@ -23,8 +23,8 @@ int main(void)
 		printf("Error\n");
 		return (1);
 	}
-	new->n = 9;
-	new->next = head;
+	//new->n = 9;
+	//new->next = head;
 	head = new;
 	n = print_listint(head);
 	printf("-> %u elements\n", n);
