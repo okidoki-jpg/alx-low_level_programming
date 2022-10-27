@@ -1,5 +1,5 @@
-#ifndef _MAIN_H /* You may change this (e.g. main.h becomes MAIN_H)*/
-#define _MAIN_H /* You may change this (e.g. main.h becomes MAIN_H)*/
+#ifndef _lists_h_
+#define _lists_h_
 
 #include <stdio.h>
 #include <stdlib.h>
