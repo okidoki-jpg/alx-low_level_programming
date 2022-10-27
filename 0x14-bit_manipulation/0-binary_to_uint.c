@@ -14,12 +14,8 @@ unsigned int binary_to_uint(const char *b)
 	if (!*b)
 		return (0);
 
-	while (*b)
-	{
+	while (b[len])
 		len++;
-		b++;
-	}
-	b -= len;
 
 	while (len--)
 	{
