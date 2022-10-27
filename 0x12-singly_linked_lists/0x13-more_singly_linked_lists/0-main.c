@@ -9,6 +9,16 @@
  * Return: Always 0.
  */
 
+
+int main(void)
+{
+	size_t n;
+
+	n = print_listint(NULL);
+	printf("-> %u elements\n", n);
+	return (0);
+}
+/*
 int main(void)
 {
 	listint_t *head;
@@ -30,4 +40,4 @@ int main(void)
 	printf("-> %u elements\n", n);
 	free(new);
 	return (0);
-}
+}*/
