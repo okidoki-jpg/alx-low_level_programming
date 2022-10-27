@@ -4,7 +4,6 @@
  * print_listint - prints list elements
  * @h: Singly linked list head pointer
  *
- * Description: prints all the elements of a listint_t list
  * Return: the number of nodes.
  */
 
