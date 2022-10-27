@@ -26,7 +26,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[len] > 47 && b[len] < 58)
 		{
 			num = b[len] - '0';
-			if (num)
+			if (num == 1)
 				res += powr(2, exp);
 			exp++;
 		}
