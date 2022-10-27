@@ -3,11 +3,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#ifndef _lists_h_
-#define _lists_h_
-
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * struct listint_s - singly linked list
