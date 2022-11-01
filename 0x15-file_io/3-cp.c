@@ -1,5 +1,6 @@
 #include "main.h"
 
+void errorMsg(char *msg, char *file, int exitCode);
 void _close(int fd);
 
 /**
@@ -16,40 +17,46 @@ int main(int ac, char **av)
 	char buff[1024];
 
 	if (ac != 3)
-	{
-		dprintf(STDERR_FILENO, "Usage: %s file_from file_to\n", av[0]);
-		exit(97);
-	}
+		errorMsg("Usage: %s file_from file_to\n", av[0], 97);
 
 	fd_src = open(av[1], O_RDONLY);
 	if (fd_src == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file%s\n", av[1]);
-		exit(98);
-	}
+		errorMsg("Error: Can't read from file %s\n", av[1], 98);
 
 	fd_dest = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_dest == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
-		exit(99);
-	}
+		errorMsg("Error: Can't write to %s\n", av[2], 99);
 
 	len = read(fd_src, buff, sizeof(buff));
 	while (len > 0)
 	{
 		if (write(fd_dest, buff, len) == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 			_close(fd_dest);
 			_close(fd_src);
-			exit(99);
+			errorMsg("Error: Can't write to %s\n", av[2], 99);
 		}
 		len = read(fd_src, buff, sizeof(buff));
 	}
 	_close(fd_dest);
 	_close(fd_src);
 	return (0);
+}
+
+/**
+ * errorMsg - Display error message, exit with correct
+ * value
+ * @msg: Error message
+ * @file: File triggering error
+ * @exitCode: code to exit with
+ *
+ * Return: void
+ */
+
+void errorMsg(char *msg, char *file, int exitCode)
+{
+	dprintf(STDERR_FILENO, msg, file);
+	exit(exitCode);
 }
 
 /**
