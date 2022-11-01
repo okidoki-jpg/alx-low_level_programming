@@ -52,6 +52,14 @@ int main(int ac, char **av)
 	return (0);
 }
 
+/**
+ * _close - close file descriptors, print message & exit
+ * with 100 on fail
+ * @fd: fd handle
+ *
+ * Return: void
+ */
+
 void _close(int fd)
 {
 	close(fd);
