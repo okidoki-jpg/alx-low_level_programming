@@ -73,7 +73,7 @@ void errorMsg(char *msg, char *file, int exitCode)
 void _close(int fd)
 {
 	close(fd);
-	if (fd == -1)
+	if (fd)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
