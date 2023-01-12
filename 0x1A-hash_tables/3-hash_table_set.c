@@ -12,7 +12,8 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *node = malloc(sizeof(hash_node_t));
-	unsigned long int idx = key_index(key, ht->size);
+    const unsigned char *k = (const unsigned char *) key;
+	unsigned long int idx = key_index(k, ht->size);
 
 	if (!node)
 		return (0);
@@ -39,15 +40,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 hash_table_t *collision(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int idx = key_index(key, ht->size);
-
+    const unsigned char *k = (const unsigned char *) key;
+	unsigned long int idx = key_index(k, ht->size);
 	hash_node_t *tail = ht->array[idx];
 	hash_node_t *node = malloc(sizeof(hash_node_t));
 
 	if (!node)
 		return (NULL);
 
-	node->key = (char *) key;
+	node->key = (char *) k;
 	node->value = (char *) value;
 	node->next = tail;
 
