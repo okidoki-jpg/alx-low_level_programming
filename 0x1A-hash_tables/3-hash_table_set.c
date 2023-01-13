@@ -31,7 +31,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	else
 	{
 		node->next = ht->array[idx];
-		ht-array[idx] = node;
+		ht->array[idx] = node;
 	}
 	return (1);
 }
