@@ -10,8 +10,7 @@
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-    const unsigned char *k = (const unsigned char *) key;
-	hash_node_t *node = ht->array[key_index(k, ht->size)];
+	hash_node_t *node = ht->array[key_index((unsigned char *)key, ht->size)];
 
 	while (node)
 	{
