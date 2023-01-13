@@ -22,33 +22,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!node)
 		return (0);
 
-	node->key = (char *) key;
+	node->key = (char *) strdup(key);
 	node->value = (char *) strdup(value);
 	node->next = NULL;
 
 	if (!ht->array[idx])
 		ht->array[idx] = node;
 	else
-		ht = collision(ht, node, idx);
-
+	{
+		node->next = ht->array[idx];
+		ht-array[idx] = node;
+	}
 	return (1);
-}
-
-/**
- * collision - handle collision
- * @ht: hash table
- * @node: new node
- * @idx: index
- *
- * Return: modified table
- */
-
-hash_table_t *collision(hash_table_t *ht, hash_node_t *node,
-		unsigned long int idx)
-{
-	hash_node_t *tail = ht->array[idx];
-
-	node->next = tail;
-	ht->array[idx] = node;
-	return (ht);
 }
