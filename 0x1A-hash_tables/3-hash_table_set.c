@@ -23,7 +23,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	node->key = (char *) key;
-	node->value = (char *) value;
+	node->value = (char *) strdup(value);
 	node->next = NULL;
 
 	if (!ht->array[idx])
