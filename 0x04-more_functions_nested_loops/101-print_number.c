@@ -30,12 +30,13 @@ int powr(int val, int p)
 
 void print_number(int n)
 {
-	int tmp, val, len = 1;
+	int tmp, val, swch = 0, len = 1;
 
 	if (n == INT_MIN)
 	{
 		_putchar('-');
 		n = INT_MAX;
+		swch = 1;
 	}
 
 	if (n < 0)
@@ -56,7 +57,7 @@ void print_number(int n)
 	/* print each number */
 	while (len)
 	{
-		if (len == 1 && n == INT_MAX)
+		if (len == 1 && swch)
 		{
 			val = 8;
 			--len;
