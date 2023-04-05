@@ -1,3 +1,4 @@
+#include <limits.h>
 #include "main.h"
 
 /**
@@ -31,6 +32,12 @@ void print_number(int n)
 {
 	int tmp, val, len = 1;
 
+	if (n == INT_MIN)
+	{
+		_putchar('-');
+		n = INT_MAX;
+	}
+
 	if (n < 0)
 	{
 		n = -n;
@@ -49,7 +56,13 @@ void print_number(int n)
 	/* print each number */
 	while (len)
 	{
-		val = (n / powr(10, --len)) % 10;
+		if (len == 1 && n == INT_MAX)
+		{
+			val = 8;
+			--len;
+		}
+		else
+			val = (n / powr(10, --len)) % 10;
 		_putchar(val + '0');
 	}
 }
