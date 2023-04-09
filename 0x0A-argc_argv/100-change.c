@@ -12,13 +12,13 @@
 
 int main(int argc, char **argv)
 {
-	unsigned int res = 0, tally = 0, min = -1, tot, idx;
+	unsigned int res = 0, tally = 0, tot, idx;
 	int change[] = {25, 10, 5, 2, 1, 0};
 
 	if (argc == 2)
 	{
 		tot = atoi(argv[1]);
-		if (tot > min)
+		if (*argv[1] != '-')
 		{
 			idx = 0;
 			while (res != tot)
