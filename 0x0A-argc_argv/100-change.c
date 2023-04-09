@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 	if (argc == 2)
 	{
 		tot = atoi(argv[1]);
-		if (tot >= 0)
+		if (tot >= tally)
 		{
 			idx = 0;
 			while (res != tot)
