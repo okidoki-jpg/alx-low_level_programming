@@ -1,3 +1,6 @@
+#include "main.h"
+#include <stdlib.h>
+
 /**
  * alloc_grid - create and allocate 0 to 2D array
  * @width: grid width/row size
@@ -8,18 +11,18 @@
 
 int **alloc_grid(int width, int height)
 {
-	int i, j;
 	int **arr;
+	int i, j;
 	if (width < 1 || height < 1)
 		return (NULL);
 
-	arr = malloc(width);
+	arr = malloc(height * sizeof(int));
 	if (arr == NULL)
 		return (NULL);
 
 	for (i = 0; i < width; i++)
 	{
-		arr[i] = malloc(height * sizeof(int));
+		arr[i] = malloc(width * sizeof(int));
 		if (arr[i] == NULL)
 		{
 			for (j = 0; j < i; j++)
@@ -27,7 +30,7 @@ int **alloc_grid(int width, int height)
 			free(arr);
 			return (NULL);
 		}
-		for (j = 0; j < height; j++)
+		for (j = 0; j < width; j++)
 		{
 			arr[i][j] = 0;
 		}
