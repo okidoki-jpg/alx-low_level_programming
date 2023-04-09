@@ -10,16 +10,15 @@
  * Return: 0 for success, else 1
  */
 
-
 int main(int argc, char **argv)
 {
-	int res = 0, tally = 0, tot, idx;
+	unsigned int res = 0, tally = 0, tot, idx;
 	int change[] = {25, 10, 5, 2, 1, 0};
 
 	if (argc == 2)
 	{
 		tot = atoi(argv[1]);
-		if (tot > -1)
+		if (tot >= 0)
 		{
 			idx = 0;
 			while (res != tot)
@@ -32,7 +31,7 @@ int main(int argc, char **argv)
 				else
 					idx++;
 			}
-			printf("%d\n", tally);
+			printf("%u\n", tally);
 		}
 		else
 			printf("0\n");
@@ -44,3 +43,4 @@ int main(int argc, char **argv)
 	}
 	return (0);
 }
+
