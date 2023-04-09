@@ -13,3 +13,7 @@
 4-add.c:
     add positive values from argv
 
+100-change.c:
+	print the minimum number of coins to make change for an amount
+	of money.
+

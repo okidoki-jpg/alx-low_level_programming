@@ -11,22 +11,33 @@
 
 int main(int argc, char **argv)
 {
-	int res = 0;
+	int res = 0, len = 0;
 
 	if (argc > 1)
 	{
 		while (--argc)
 		{
-			argv++;
-			if (**argv >= '0' && **argv <= '9')
+			++argv;
+			while (*argv)
 			{
-				res += (int) atoi(*argv);
+				if (**argv >= '0' && **argv <= '9')
+				{
+					++len;
+					++*argv;
+				}
+				else if (**argv == '\0')
+				{
+					*argv -= len;
+					len = 0;
+					break;
+				}
+				else
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
+			res += (int) atoi(*argv);
 		}
 	}
 	printf("%d\n", res);
